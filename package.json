@@ -1,22 +1,36 @@
 {
-  "name": "@bnb/card",
-  "version": "1.6.0",
-  "description": "A personal card for Tierney Cyren (@bitandbang)",
+  "name": "navarroaxel",
+  "version": "0.1.1",
+  "description": "A personal card for Axel Navarro (@navarroaxel)",
   "main": "/bin/card.js",
   "bin": {
-    "bitandbang": "./bin/card.js"
+    "navarroaxel": "./bin/card.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bnb/bitandbang.git"
-  },
-  "homepage": "https://bnb.im",
   "scripts": {
     "prepublish": "npm run build",
     "build": "node build.js",
     "dev": "npm run build && node ./bin/card.js",
     "lint": "standard",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "boxen": "^4.2.0",
+    "chalk": "^4.1.0",
+    "standard": "^14.3.4"
+  },
+  "author": "Axel Navarro <navarroaxel@gmail.com>",
+  "homepage": "https://navarroaxel.github.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navarroaxel/npm-card.git"
+  },
+  "bugs": {
+    "url": "https://github.com/navarroaxel/npm-card/issues"
   },
   "keywords": [
     "card",
@@ -26,22 +40,5 @@
     "npx card",
     "business card"
   ],
-  "author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
-  "license": "MIT",
-  "files": [
-    "bin/card.js",
-    "bin/output"
-  ],
-  "devDependencies": {
-    "boxen": "^2.1.0",
-    "chalk": "^2.4.1",
-    "standard": "^12.0.1"
-  },
-  "bugs": {
-    "url": "https://github.com/bnb/bitandbang/issues"
-  },
-  "dependencies": {},
-  "publishConfig": {
-    "registry": "https://npm.registry.github.com/"
-  }
+  "license": "MIT"
 }
